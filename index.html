@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebGL Project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gl-matrix/2.8.1/gl-matrix-min.js"></script>
+</head>
+<body>
+    <h1>WebGL Project</h1>
+    <!-- Canvas for WebGL rendering -->
+    <canvas id="webgl-canvas" width="800" height="600"></canvas>
+    <script type="module" src="scripts/webglRender.js"></script>
+    <script type="module" src="scripts/objLoader.js"></script>
+    <script type="module" src="scripts/mtlLoader.js"></script>
+    <script type="module" src="scripts/phongShader.js"></script>
+    <script type="module" src="scripts/gouraudShader.js"></script>
+    <script type="module" src="scripts/rayTracer.js"></script>
+    <script type="module" src="scripts/material.js"></script>
+    <script type="module" src="scripts/light.js"></script>
+    <script type="module" src="scripts/camera.js"></script>
+    <script type="module" src="scripts/scene.js"></script>
+    <script type="module" src="scripts/accelerationStructure.js"></script>
+
+    <!-- Buttons for render mode selection -->
+    <div>
+        <button onclick="setPhongShading()">Phong Shading</button>
+        <button onclick="setGouraudShading()">Gouraud Shading</button>
+        <button onclick="setRayTracing()">Ray Tracing</button>
+    </div>
+</body>
+</html>
